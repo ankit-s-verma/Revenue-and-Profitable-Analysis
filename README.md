@@ -60,6 +60,30 @@ Revenue-and-Profitable-Analysis/
 
 ---
 
+## Power BI Dashboard
+
+The Customer Behaviour Dashboard was built in Power BI Desktop using `Updated_Revenue_Dataset.csv` as its data source. The dashboard is designed for business stakeholders and presents customer, revenue, and product insights in a single-page interactive layout with sidebar filter controls.
+
+![Power BI Dashboard](Screenshots/power-bi-dashboard.jpeg)
+
+### Dashboard Components
+
+| Component | Type | Description |
+|---|---|---|
+| Total Customers | KPI Card | 3.9K total transaction records |
+| Avg Purchase Amount | KPI Card | $59.76 mean transaction value |
+| Avg Review Rating | KPI Card | 3.75 out of 5.0 |
+| Subscription Status | Donut Chart | 73% Non-subscriber · 27% Subscriber |
+| Sales by Category | Bar Chart | Order volume across Clothing, Accessories, Footwear, Outerwear |
+| Revenue by Category | Bar Chart | Revenue contribution per category |
+| Revenue by Age Group | Horizontal Bar | Revenue breakdown across Young Adult, Adult, Middle Age, Senior |
+| Sales by Age Group | Horizontal Bar | Order count breakdown by age segment |
+| Sidebar Filters | Slicers | Subscription Status · Gender · Category · Shipping Type |
+
+> Dashboard file: `src/power-bi/customer_behaviour_dashboard.pbix`
+
+---
+
 ## Project Workflow
 
 ### Phase 1 — Data Understanding
