@@ -9,7 +9,7 @@
 This project analyses customer purchasing behaviour and revenue patterns for an e-commerce retail company using a dataset of **3,900 transactions across 19 features**. The pipeline moves from raw CSV ingestion through Python-based EDA, PostgreSQL integration, structured SQL querying, and a fully interactive Power BI dashboard — producing a coherent set of evidence-backed business insights and recommendations.
 
 **Dataset:** Customer Shopping Behaviour · 3,900 Transactions · 19 Features  
-**Source:** [Kaggle — Consumer Behavior and Shopping Habits Dataset](https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset)
+**Source:** [GitHub — Consumer Shopping Behavior Dataset](https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI/blob/main/customer_shopping_behavior.csv)
 
 ---
 
@@ -38,13 +38,21 @@ This project analyses customer purchasing behaviour and revenue patterns for an 
 ```
 Revenue-and-Profitable-Analysis/
 │
-├── src/
-│   └── Revenue_EDA.ipynb          # Main Jupyter Notebook (EDA, cleaning, feature engineering)
+├── Screenshots/
+│   └── power-bi-dashboard.jpeg
 │
 ├── reports/
-│   └── ECommerce_Revenue_Analytics_Report_Final.docx   # Full project report
+│   └── ECommerce_Revenue_Analytics_Report.pdf
 │
-├── Screenshots/                   # Dashboard and plot screenshots
+├── src/
+│   ├── databse/
+│   │   └── SQL-Driven Business Analysis.sql
+│   ├── power-bi/
+│   │   └── customer_behaviour_dashboard.pbix
+│   └── scripts/
+│       ├── Revenue_EDA.ipynb
+│       ├── Updated_Revenue_Dataset.csv
+│       └── customer_shopping_behavior.csv
 │
 ├── .gitignore
 └── README.md
@@ -161,7 +169,7 @@ DB_NAME=revenue_db
 
 ### Run the Notebook
 ```bash
-jupyter notebook src/Revenue_EDA.ipynb
+jupyter notebook src/scripts/Revenue_EDA.ipynb
 ```
 
 The notebook will clean the data, engineer features, run EDA, and push the cleaned DataFrame to PostgreSQL. SQL queries can then be executed against the `revenue_data` table.
